@@ -18,7 +18,7 @@ timeline.set("body", { background: "var(--white)" })
 timeline.to("#countup", { opacity: 1, duration: debug ? debugDuration : 8 });
 
 // Step 3: Move countup down and fade-in button
-timeline.to("#countup", { y: "200px", duration: debug ? debugDuration : 3 /*8*/ })
+timeline.to("#countup", { y: "250px", duration: debug ? debugDuration : 3 /*8*/ })
     .to("#enter-btn", { opacity: 1, duration: debug ? debugDuration : 1 });
 
 // Step 4: On button click, transition to Interlude, then the site
@@ -30,8 +30,11 @@ enterBtn.addEventListener("click", () => {
                 enterBtn.remove();
             }
         })
-        .to("#countup", { y: "initial" })
-        .to("#interlude", { opacity: 1, duration: debug ? debugDuration : 5 })
+        .to("#countup", { y: "-200px" })
+        .to("#interlude", { opacity: 1, duration: debug ? debugDuration : 1 });
+
+    jQuery("#countup").detach().appendTo('#end');
+
     tl
         .to("#interlude", {
             opacity: 0, duration: debug ? debugDuration : 2,
