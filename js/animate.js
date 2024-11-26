@@ -8,6 +8,7 @@ const enterBtn = document.getElementById("enter-btn");
 // const video = document.getElementById("video");
 // const socials = document.getElementById("socials");
 
+var debug = false;
 var debugDuration = 0.5;
 
 // Step 1: White screen delay
