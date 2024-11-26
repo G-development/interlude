@@ -1,5 +1,5 @@
 var countup = document.querySelector("#countup");
-var countup_date = Date.parse('15 Nov 2024 12:04:00 GMT+1');
+var countup_date = Date.parse('25 Jul 2024 13:30:00 GMT+1');
 
 var antonio = document.querySelector("#antonio");
 var antonio_date = Date.parse('07 Feb 2001 08:30:00 GMT+1');

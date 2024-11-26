@@ -15,24 +15,26 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #1e1e24;
+    background: var(--white);
+    ;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #e4284b;
+    background: var(--black)
 }
 
 ::-webkit-scrollbar-corner {
-    background: #1e1e24;
+    background: var(--white);
 }
 
 ::selection {
-    background: #e4284b;
+    background: var(--black)
 }
 
 :root {
     --white: #FCF9F6;
     --grey: #898989;
+    --lightgrey: lightgrey;
     --black: #313131;
 }
 
