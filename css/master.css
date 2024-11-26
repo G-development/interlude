@@ -44,6 +44,8 @@ body {
     overflow: hidden;
     /* font-family: 'Avenir', sans-serif; */
     font-family: 'Avenir LT Pro', sans-serif;
+    /* font-family: 'Kardinal', sans-serif; */
+    /* font-family: monospace; */
     font-weight: 100;
 }
 
@@ -115,7 +117,6 @@ video,
 #interlude {
     opacity: 0;
     font-size: 3rem;
-
 }
 
 #introduction {
@@ -165,6 +166,13 @@ video,
     color: var(--black);
 }
 
+#credits-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 150px;
+}
+
 #credits {
     flex-direction: column;
 }
@@ -172,15 +180,16 @@ video,
 #containerEnd {
     /* height: 100vh; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0;
 }
 
 
 #antonio {
     font-size: 3rem;
-    margin: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     transition: all 1s ease-in-out;
     opacity: 0;
 }

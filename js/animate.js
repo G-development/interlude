@@ -37,11 +37,11 @@ enterBtn.addEventListener("click", () => {
 
     tl
         .to("#interlude", {
-            opacity: 0, duration: debug ? debugDuration : 2,
+            opacity: 0, duration: debug ? debugDuration : 1,
             onComplete: () => letScroll()
         })
         .to("#interlude", {
-            opacity: 1, duration: debug ? debugDuration : 2
+            opacity: 1, duration: debug ? debugDuration : 1
         })
         ;
 
@@ -52,13 +52,13 @@ enterBtn.addEventListener("click", () => {
 
     // Show everything
     tl
-        .to("#introduction", { opacity: 1, duration: debug ? debugDuration : 2 })
-        .to("#pictures", { opacity: 1, duration: debug ? debugDuration : 2 })
-        .to("#socials", { opacity: 1, duration: debug ? debugDuration : 2 })
-        .to("#trailer", { opacity: 1, duration: debug ? debugDuration : 2 })
-        .to("#video", { opacity: 1, duration: debug ? debugDuration : 2 /*, onStart: () => video.play() */ })
-        .to("#credits", { opacity: 1, duration: debug ? debugDuration : 2 })
-        .to("#containerEnd, #antonio", { opacity: 1, duration: debug ? debugDuration : 2 });
+        .to("#introduction", { opacity: 1, duration: debug ? debugDuration : 1 })
+        .to("#pictures", { opacity: 1, duration: debug ? debugDuration : 1 })
+        .to("#socials", { opacity: 1, duration: debug ? debugDuration : 1 })
+        .to("#trailer", { opacity: 1, duration: debug ? debugDuration : 1 })
+        .to("#video", { opacity: 1, duration: debug ? debugDuration : 1 /*, onStart: () => video.play() */ })
+        .to("#credits", { opacity: 1, duration: debug ? debugDuration : 1 })
+        .to("#containerEnd, #antonio", { opacity: 1, duration: debug ? debugDuration : 1 });
 });
 
 
