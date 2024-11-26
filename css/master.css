@@ -32,28 +32,49 @@ html {
 
 :root {
     --white: #FCF9F6;
-    --grey: #B0ADB6;
+    --grey: #898989;
+    --black: #313131;
 }
 
 /* Add-ons here */
 
 body {
     overflow: hidden;
+    /* font-family: 'Avenir', sans-serif; */
+    font-family: 'Avenir LT Pro', sans-serif;
+    font-weight: 100;
 }
 
 .main {
     display: flex;
+    flex-direction: column;
+    gap: 100px;
     justify-content: center;
     align-items: center;
+}
+
+.height {
     height: 100vh;
 }
 
 #countup {
-    color: var(--grey);
-    font-family: 'Avenir', sans-serif;
+    color: var(--black);
+    font-size: 3rem;
     text-align: center;
 }
 
+#countup {
+    margin: 30px;
+}
+
+.abs-cent {
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    /* Hidden by default */
+}
+
+/* 
 #countup,
 #enter-btn,
 #interlude,
@@ -61,36 +82,91 @@ video,
 #socials {
     position: absolute;
     text-align: center;
-    opacity: 0;
-    /* Hidden by default */
-}
+    opacity: 0; //Hidden by default
+}  */
 
 #enter-btn {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 10px 20px;
-    background: var(--grey);
-    color: var(--white);
+    background: none;
+    color: var(--grey);
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    font-family: 'Avenir', sans-serif;
+
     z-index: 1;
+    transition: all 1s ease-in-out;
+}
+
+#enter-btn:hover {
+    color: black;
+    font-size: 1.6rem;
+    /* transition: all 0.5s ease-in-out; */
 }
 
 #interlude {
+    opacity: 0;
     font-size: 3rem;
-    font-family: 'Avenir', sans-serif;
+    margin: 35px;
 }
 
-video {
+#introduction {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    opacity: 0;
+}
+
+/* video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+} */
+
+video {
+    width: 80%;
+
 }
 
-#socials {
+#socials,
+#credits {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
     bottom: 10px;
     font-size: 1.5rem;
+}
+
+#socials a,
+#credits a {
+    display: inline-block;
     color: var(--grey);
-    font-family: 'Avenir', sans-serif;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+}
+
+#socials a:hover,
+#credits a:hover {
+    text-decoration: none;
+    transform: scale(1.3);
+    color: var(--black);
+}
+
+#containerEnd {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#antonio {
+    font-size: 3rem;
+    margin: 50px;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+#antonio:hover {
+    color: red;
 }

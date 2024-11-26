@@ -1,0 +1,53 @@
+#pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    opacity: 0;
+}
+
+.pic {
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.pic:hover {
+    transform: scale(1.1);
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    transition: all 1.5s ease-in-out;
+    z-index: 1000;
+}
+
+#modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid white;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1100;
+}

@@ -7,25 +7,87 @@
     <title>Interlude</title>
 
     <link rel="stylesheet" href="css/master.css">
-    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <link rel="stylesheet" href="css/pictures.css">
+    <!-- <link rel="stylesheet" href="css/minified.css"> -->
+    <!-- <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet"> -->
+    <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="main">
-        <div id="countup">0</div>
-        <button id="enter-btn">Enter</button>
-        <p id="interlude">Interlude</p>
-        <video id="video" src="samplevid.mp4" controls></video>
-        <div id="socials">
-            <p>Follow us on: Facebook | Twitter | Instagram</p>
-            <p>Credits: Antonio Maria Alessio</p>
+    <div class="main height">
+        <div id="countup" class="abs-cent">0</div>
+        <button id="enter-btn" class="abs-cent">enter</button>
+        <p id="interlude" class="abs-cent">Interlude</p>
+        <div id="introduction">
+            <p>Interlude doesn't tell a story, nor a specific place or time. It is the wait for something
+                that never comes, a suspended moment where the present and the future blur without ever revealing
+                themselves. In this space, every movement seems to repeat in an endless cycle, each gesture without
+                conclusion. Time loses direction, but it is precisely in this indeterminacy that a sense of stasis is
+                born.</p>
+            <p>
+                What does it mean to wait? And what if nothing ever arrives? The figures brush past each other without
+                truly
+                meeting, their gestures and words remain incomplete. The distance between them, seemingly brief, is
+                existential. It is not about finding an answer, but about exploring the meaning of a wait that leads to
+                nothing, yet defines us in its very unfolding.</p>
+            <p>
+                Interlude invites reflection on what we lack, on our need to arrive, to understand, and on how we often
+                remain still, trying to define a void that cannot be filled. In this wait, perhaps the truth of who we
+                are
+                hides, but it never reveals itself completely.
+            </p>
+        </div>
+        <div id="pictures">
+            <img class="pic" alt="picture-1"
+                src="https://images.unsplash.com/photo-1720048170996-40507a45c720?q=80&w=1913&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <img class="pic" alt="picture-2"
+                src="https://images.unsplash.com/photo-1720048170996-40507a45c720?q=80&w=1913&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <img class="pic" alt="picture-3"
+                src="https://images.unsplash.com/photo-1720048170996-40507a45c720?q=80&w=1913&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <img class="pic" alt="picture-4"
+                src="https://images.unsplash.com/photo-1720048170996-40507a45c720?q=80&w=1913&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <img class="pic" alt="picture-5"
+                src="https://images.unsplash.com/photo-1720048170996-40507a45c720?q=80&w=1913&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+        <div id="modal">
+            <span id="close">&times;</span>
+            <img id="modal-img" src="" alt="Modal Image">
+        </div>
+        <div id="socials" class="abs-cent">
+            <a href="https://www.tiktok.com/@interlude.project">tiktok</a>
+            <a href="https://www.instagram.com/interlude.project_">instagram</a>
+        </div>
+        <video id="trailer" class="abs-cent" src="samplevid.mp4" controls></video>
+        <video id="video" class="abs-cent" src="samplevid.mp4" controls></video>
+        <div id="credits" class="abs-cent">
+            <p>credits</p>
+            <div>
+                <p>Nome Cognome</p>
+                <a href="">portfolio</a>
+                <a href="">instagram</a>
+            </div>
+            <div>
+                <p>Nome Cognome</p>
+                <a href="">portfolio</a>
+                <a href="">instagram</a>
+            </div>
+            <div>
+                <p>Nome Cognome</p>
+                <a href="">portfolio</a>
+                <a href="">instagram</a>
+            </div>
+        </div>
+        <div id="containerEnd">
+            <div id="antonio">0</div>
         </div>
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="timer.js"></script>
-    <script src="animate.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/pic.js"></script>
 </body>
 
 </html>
