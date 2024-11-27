@@ -42,12 +42,20 @@ html {
 
 body {
     overflow: hidden;
+    /* font-family: 'Avenir LT Pro', sans-serif; */
+    /* font-weight: 100; */
     /* font-family: 'Avenir', sans-serif; */
-    font-family: 'Avenir LT Pro', sans-serif;
     /* font-family: 'Kardinal', sans-serif; */
     /* font-family: monospace; */
-    font-weight: 100;
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-size: 17px;
+    /* font-style: normal; */
 }
+
+/* .anchor{
+   display: none;
+} */
 
 .main {
     display: flex;
@@ -133,14 +141,29 @@ video,
     object-fit: cover;
 } */
 
-#trailer {
+#vid-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    width: 70%;
+}
+
+#vid-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    width: 80%;
+}
+
+/* #trailer {
     width: 70%;
 }
 
 #video {
     width: 80%;
-
-}
+} */
 
 #socials,
 #credits {
@@ -166,11 +189,10 @@ video,
     color: var(--black);
 }
 
-#credits-wrap{
+#credits-wrap {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 150px;
 }
 
 #credits {
@@ -179,6 +201,7 @@ video,
 
 #containerEnd {
     /* height: 100vh; */
+    margin-left: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,8 +222,22 @@ video,
 }
 
 #end {
-    height: 150vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
     align-items: end;
+}
+
+
+#links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+    margin: 75px 0;
+}
+
+.link {
+    text-decoration: none;
 }

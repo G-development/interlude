@@ -8,7 +8,7 @@ const enterBtn = document.getElementById("enter-btn");
 // const video = document.getElementById("video");
 // const socials = document.getElementById("socials");
 
-var debug = false;
+var debug = true;
 var debugDuration = 0.5;
 
 // Step 1: White screen delay
@@ -55,10 +55,13 @@ enterBtn.addEventListener("click", () => {
         .to("#introduction", { opacity: 1, duration: debug ? debugDuration : 1 })
         .to("#pictures", { opacity: 1, duration: debug ? debugDuration : 1 })
         .to("#socials", { opacity: 1, duration: debug ? debugDuration : 1 })
+        .to("#vid-1", { opacity: 1, duration: debug ? debugDuration : 1 })
+        .to("#vid-2", { opacity: 1, duration: debug ? debugDuration : 1 })
         .to("#trailer", { opacity: 1, duration: debug ? debugDuration : 1 })
         .to("#video", { opacity: 1, duration: debug ? debugDuration : 1 /*, onStart: () => video.play() */ })
         .to("#credits", { opacity: 1, duration: debug ? debugDuration : 1 })
-        .to("#containerEnd, #antonio", { opacity: 1, duration: debug ? debugDuration : 1 });
+        .to("#containerEnd, #antonio", { opacity: 1, duration: debug ? debugDuration : 1 })
+        .to("#links", { opacity: 1, duration: debug ? debugDuration : 1 });
 });
 
 

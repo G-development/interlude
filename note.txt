@@ -12,3 +12,6 @@ TikTok: https://www.tiktok.com/@interlude.project4?_t=8riJnN7jxws&_r=1
 IG: https://www.instagram.com/interlude.project_?igsh=ZXFsa214am5ycHJk&utm_source=qr
 
 /**************************************************************************************************************/
+
+Anchor points:
+home, intro, pics, social, vid-1, vid-2, credit, fine
