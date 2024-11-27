@@ -222,7 +222,7 @@ video,
 }
 
 #end {
-    height: 120vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: end;

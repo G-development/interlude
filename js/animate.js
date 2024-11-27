@@ -1,21 +1,15 @@
-// GSAP Timeline
 const timeline = gsap.timeline();
 
-// Variables
-// var countup = document.getElementById("countup");
 const enterBtn = document.getElementById("enter-btn");
-// const interlude = document.getElementById("interlude");
-// const video = document.getElementById("video");
-// const socials = document.getElementById("socials");
 
-var debug = true;
+var debug = false;
 var debugDuration = 0.5;
 
 // Step 1: White screen delay
 timeline.set("body", { background: "var(--white)" })
     .to({}, { duration: debug ? debugDuration : 3 });
 
-timeline.to("#countup", { opacity: 1, duration: debug ? debugDuration : 8 });
+timeline.to("#countup", { opacity: 1, duration: debug ? debugDuration : 3 /*8*/ });
 
 // Step 3: Move countup down and fade-in button
 timeline.to("#countup", { y: "250px", duration: debug ? debugDuration : 3 /*8*/ })
@@ -26,18 +20,19 @@ const tl = gsap.timeline();
 enterBtn.addEventListener("click", () => {
     tl
         .to("#countup", {
-            opacity: 0, duration: debug ? debugDuration : 2, onComplete: () => {
+            opacity: 0, duration: debug ? debugDuration : 1, onComplete: () => {
                 enterBtn.remove();
             }
         })
         .to("#countup", { y: "-200px" })
-        .to("#interlude", { opacity: 1, duration: debug ? debugDuration : 1 });
+        // .to("#interlude", { opacity: 1, duration: debug ? debugDuration : 1 })
+        ;
 
     jQuery("#countup").detach().appendTo('#end');
 
     tl
         .to("#interlude", {
-            opacity: 0, duration: debug ? debugDuration : 1,
+            opacity: 0, duration: debug ? debugDuration : 0,
             onComplete: () => letScroll()
         })
         .to("#interlude", {
@@ -61,6 +56,7 @@ enterBtn.addEventListener("click", () => {
         .to("#video", { opacity: 1, duration: debug ? debugDuration : 1 /*, onStart: () => video.play() */ })
         .to("#credits", { opacity: 1, duration: debug ? debugDuration : 1 })
         .to("#containerEnd, #antonio", { opacity: 1, duration: debug ? debugDuration : 1 })
+        .to("#countup", { y: "initial" })
         .to("#links", { opacity: 1, duration: debug ? debugDuration : 1 });
 });
 

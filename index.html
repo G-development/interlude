@@ -56,21 +56,17 @@
 
         <div id="pictures">
             <a name="pics" class="anchor"></a>
-            <img class="pic" alt="picture-1"
-                src="https://images.unsplash.com/photo-1720048170996-40507a45c720?q=80&w=1913&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-            <img class="pic" alt="picture-2"
-                src="https://images.unsplash.com/photo-1720048170996-40507a45c720?q=80&w=1913&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-            <img class="pic" alt="picture-3"
-                src="https://images.unsplash.com/photo-1720048170996-40507a45c720?q=80&w=1913&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-            <img class="pic" alt="picture-4"
-                src="https://images.unsplash.com/photo-1720048170996-40507a45c720?q=80&w=1913&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-            <img class="pic" alt="picture-5"
-                src="https://images.unsplash.com/photo-1720048170996-40507a45c720?q=80&w=1913&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <img class="pic" alt="picture-1" onclick="openModal(0)" src="asset/pic.avif">
+            <img class="pic" alt="picture-2" onclick="openModal(1)" src="asset/pic-1.avif">
+            <img class="pic" alt="picture-3" onclick="openModal(2)" src="asset/pic-2.avif">
+            <img class="pic" alt="picture-4" onclick="openModal(3)" src="asset/pic-3.avif">
+            <img class="pic" alt="picture-5" onclick="openModal(4)" src="asset/pic-4.avif">
         </div>
 
-        <div id="modal">
-            <span id="close">&times;</span>
-            <img id="modal-img" src="" alt="Modal Image">
+        <div id="modal" class="modal" onclick="closeModal()">
+            <span class="arrow left" onclick="prevImage(event)">&#10094;</span>
+            <img id="modal-image" alt="Modal Image">
+            <span class="arrow right" onclick="nextImage(event)">&#10095;</span>
         </div>
 
         <div id="socials" class="abs-cent">
@@ -81,12 +77,12 @@
 
         <div id="vid-1" class="abs-cent">
             <a name="vid-1" class="anchor"></a>
-            <video id="trailer" class="abs-cent" src="samplevid.mp4" controls></video>
+            <video id="trailer" class="abs-cent" src="asset/samplevid.mp4" controls></video>
         </div>
 
         <div id="vid-2" class="abs-cent">
             <a name="vid-2" class="anchor"></a>
-            <video id="video" class="abs-cent" src="samplevid.mp4" controls></video>
+            <video id="video" class="abs-cent" src="asset/samplevid.mp4" controls></video>
         </div>
 
         <div id="credits-wrap">
