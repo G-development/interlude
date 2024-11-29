@@ -54,10 +54,11 @@ enterBtn.addEventListener("click", () => {
         .to("#vid-2", { opacity: 1, duration: debug ? debugDuration : 1 })
         .to("#trailer", { opacity: 1, duration: debug ? debugDuration : 1 })
         .to("#video", { opacity: 1, duration: debug ? debugDuration : 1 /*, onStart: () => video.play() */ })
-        .to("#credits", { opacity: 1, duration: debug ? debugDuration : 1 })
+        .to("#credits-1, #credits-2", { opacity: 1, duration: debug ? debugDuration : 1 })
         .to("#containerEnd, #antonio", { opacity: 1, duration: debug ? debugDuration : 1 })
         .to("#countup", { y: "initial" })
-        .to("#links", { opacity: 1, duration: debug ? debugDuration : 1 });
+        // .to("#links", { opacity: 1, duration: debug ? debugDuration : 1 })
+        ;
 });
 
 

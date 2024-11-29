@@ -1,6 +1,6 @@
 #pictures {
-    max-width: 70%;
-    max-height: 80vh;
+    max-width: 60%;
+    /* max-height: 80vh; */
     opacity: 0;
     display: flex;
     flex-wrap: wrap;
@@ -12,12 +12,12 @@
     width: calc(33.33% - 10px);
     aspect-ratio: 1;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
 #pictures img:hover {
-    transform: scale(1.1);
+    filter: brightness(1.1);
 }
 
 #modal {
