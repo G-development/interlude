@@ -38,7 +38,8 @@ enterBtn.addEventListener("click", () => {
         // .to("#interlude", { opacity: 1, duration: debug ? debugDuration : 1 })
         ;
 
-    jQuery("#countup").detach().appendTo('#end');
+    jQuery("#countup").detach().insertAfter ('#append_here');
+   
 
     tl
         .to("#interlude", {
@@ -66,6 +67,7 @@ enterBtn.addEventListener("click", () => {
         .to("#video", { opacity: 1, duration: debug ? debugDuration : 1 /*, onStart: () => video.play() */ })
         .to("#credits-1, #credits-2", { opacity: 1, duration: debug ? debugDuration : 1 })
         .to("#containerEnd, #antonio", { opacity: 1, duration: debug ? debugDuration : 1 })
+        .to("#end", { opacity: 1, duration: debug ? debugDuration : 1 })
         .to("#countup", { y: "initial" })
         // .to("#links", { opacity: 1, duration: debug ? debugDuration : 1 })
         ;
