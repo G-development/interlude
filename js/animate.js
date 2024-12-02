@@ -1,6 +1,7 @@
 const timeline = gsap.timeline();
 
 const enterBtn = document.getElementById("enter-btn");
+const gif = document.getElementById("gif");
 
 var debug = false;
 var debugDuration = 0.5;
@@ -24,6 +25,15 @@ enterBtn.addEventListener("click", () => {
                 enterBtn.remove();
             }
         })
+        .to("#gif", { opacity: 1, duration: debug ? debugDuration : 1 })
+        .to("#gif", {
+            delay: 3,
+            opacity: 0,
+            duration: debug ? debugDuration : 1, onComplete: () => {
+                gif.remove();
+            }
+        }
+        )
         .to("#countup", { y: "-200px" })
         // .to("#interlude", { opacity: 1, duration: debug ? debugDuration : 1 })
         ;
