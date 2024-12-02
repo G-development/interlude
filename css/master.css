@@ -199,6 +199,11 @@ video,
     align-items: center;
 }
 
+#credits-wrap p,
+#credits-wrap a {
+    font-size: medium;
+}
+
 #credits-1,
 #credits-2 {
     flex-direction: column;
@@ -217,7 +222,7 @@ video,
 
 
 #antonio {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     transition: all 1s ease-in-out;
     opacity: 0;
@@ -244,6 +249,7 @@ video,
     /* margin: 75px 0; */
 
     /* edit nav */
+    background-color: var(--white);
     position: fixed;
     left: 0;
     top: 0;
