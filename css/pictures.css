@@ -17,7 +17,7 @@
 }
 
 #pictures img:hover {
-    filter: brightness(1.1);
+    filter: brightness(0.8);
 }
 
 #modal {
