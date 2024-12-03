@@ -231,14 +231,38 @@ video,
 
 
 #antonio {
+    position: relative;
     font-size: 2.5rem;
     margin-bottom: 20px;
     transition: all 1s ease-in-out;
     opacity: 0;
 }
 
+/* 
 #antonio:hover {
     color: red;
+} */
+
+#antonio::after {
+    font-size: 2rem;
+    content: "Antonio Maria Alessio";
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--white);
+    z-index: 10;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+    pointer-events: none;
+}
+
+#antonio:hover::after {
+    opacity: 1;
+    /* transform: translateX(-50%) translateY(-5px); /* Aggiunge un leggero movimento */
+    pointer-events: auto;
 }
 
 #end {
@@ -251,7 +275,7 @@ video,
     opacity: 0;
 }
 
-#end img{
+#end img {
     width: 200px;
 }
 
