@@ -166,6 +166,10 @@ video,
     width: 80%;
 }
 
+#vid-2 p {
+    margin-top: 50px;
+}
+
 #trailer {
     max-width: 80%;
 }
@@ -311,4 +315,85 @@ video,
 
 .link:hover {
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        gap: 75px;
+    }
+
+    #countup,
+    #interlude {
+        font-size: 2rem;
+    }
+
+    #introduction {
+        max-width: 90%;
+    }
+
+    #pictures {
+        max-width: 90%;
+    }
+
+    #pictures img {
+        pointer-events: none;
+    }
+
+    #socials {
+        font-size: 1rem;
+    }
+
+    #vid-1,
+    #vid-2 {
+        max-width: 90%;
+    }
+
+    #vid-2 p {
+        margin-top: 20px;
+    }
+
+    #trailer,
+    #video {
+        max-width: 100%;
+    }
+
+    #credits-wrap {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #credits-1,
+    #credits-2 {
+        width: 90%;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    #containerEnd {
+        margin-left: initial;
+    }
+
+    #antonio {
+        font-size: 2rem;
+    }
+
+    #antonio::after {
+        font-size: 1.7rem;
+    }
+
+    #end img {
+        width: 150px;
+    }
+
+    #append_here {
+        font-size: 0.8rem;
+        margin: 0 10px;
+        text-align: center;
+    }
+
+    #links {
+        display: none;
+    }
 }
