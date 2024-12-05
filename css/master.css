@@ -174,10 +174,10 @@ video,
     max-width: 80%;
 }
 
-/*
+
 #video {
-    width: 80%;
-} */
+    max-width: 100%;
+}
 
 #socials,
 #credits-1,
